@@ -11,8 +11,3 @@ def eliminate_universal_quantifiers(expression):
         return expression
 
 
-expr_str = 'all x.(P(x) & Q(x))'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After universal quantifiers elimination:", eliminate_universal_quantifiers(expr_str))

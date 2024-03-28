@@ -34,8 +34,3 @@ def to_prenex_form(expression):
     return expression
 
 
-expr_str = 'some x all y (P(x) | P(y) -> (P(x) & P(y)))'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After converting to prenex form:", to_prenex_form(expr_str))

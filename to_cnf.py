@@ -41,8 +41,3 @@ def to_cnf(expression):
         return expression
 
 
-expr_str = '(P & Q) | R'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After converting to CNF:", to_cnf(expr_str))

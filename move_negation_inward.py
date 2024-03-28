@@ -47,8 +47,3 @@ def apply_demorgans(expression):
     return transform(expression)
 
 
-expr_str = '(-(P & Q) | -(R | S))'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After applying De Morgan's laws:", apply_demorgans(expr_str))

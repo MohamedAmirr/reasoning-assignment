@@ -31,8 +31,3 @@ def eliminate_implication(expression):
     return transform(expression)
 
 
-expr_str = '(P -> Q) & (R -> S)'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After eliminating implication:", eliminate_implication(expr_str))

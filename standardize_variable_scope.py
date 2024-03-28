@@ -43,8 +43,3 @@ def standardize_variables(expression, expression_variables=None):
         return expression
 
 
-expr_str = 'some x.P(x) & all x.Q(x)'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After standardizing variables:", standardize_variables(expr_str))

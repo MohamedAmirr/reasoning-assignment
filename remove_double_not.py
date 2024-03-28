@@ -23,8 +23,3 @@ def remove_double_negation(expression):
     return transform(expression)
 
 
-expr_str = '-(-A) & -(-(B | -(-C)))'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print('Original expression:', expr_str)
-print('After removing double negation:', remove_double_negation(expr_str))

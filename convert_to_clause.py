@@ -53,11 +53,3 @@ def convert_to_clauses(expression):
     return clauses
 
 
-expr_str = '((-P(F1(y)) | P(F1(y))) & (-P(F1(y)) | P(y)) & (-P(y) | P(F1(y))) & (-P(y) | P(y)))'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("Clauses:")
-clauses = convert_to_clauses(expr_str)
-for clause in clauses:
-    print("-", clause)

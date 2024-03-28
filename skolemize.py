@@ -20,8 +20,3 @@ def skolemization(expression, mapping=None):
         return expression
 
 
-expr_str = 'exists x.(P(x) & forall y.Q(y, x))'
-expr_str = logic.Expression.fromstring(expr_str)
-
-print("Original expression:", expr_str)
-print("After skolemization:", skolemization(expr_str))
